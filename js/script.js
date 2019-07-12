@@ -4,7 +4,7 @@
 // array to be populated with JSON content
 let quotes;
 
-//asynchronous function that fetches JSON content and populates the quotes array
+//asynchronous function that gets data from the API and populates the quotes array
 const makeRequest = async () => {
     const responseJSON = await fetch('https://my-json-server.typicode.com/morsewall/random-quotes-vanillajs-rest-api/quotes');
     quotes = await responseJSON.json();
@@ -35,7 +35,7 @@ function injectQuote() {
   } 
 };
 
-// inject a quote on screen when app loads (but only after the array was populated with the fetch from JSON)
+// inject a quote on screen when app loads (but only after the array was populated with the API response)
 makeRequest().then(result => injectQuote());
 
 //inject a quote on screen when "Get New Quote" button is clicked
