@@ -8,7 +8,7 @@
 const makeRequest = async () => {
     const responseJSON = await fetch('https://my-json-server.typicode.com/morsewall/random-quotes-vanillajs-rest-api/quotes');
     const quotes = await responseJSON.json();
-    quotes
+    {return quotes}
 }
 
 //function to access random quote from array and inject it together with author on HTML
