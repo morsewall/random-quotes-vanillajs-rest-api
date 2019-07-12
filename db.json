@@ -1,4 +1,5 @@
-[
+{
+    "quotes": [
     {
         "quoteText":"\"Many of you appear concerned that we are wasting valuable lesson time, but I assure you we will go back to school the moment you start listening to science and give us a future.\"",
         "quoteAuthor":"Greta Thunberg"
@@ -75,4 +76,5 @@
         "quoteText":"\"I want you to act as you would in a crisis. I want you to act as if our house is on fire. Because it is.\"",
         "quoteAuthor":"Greta Thunberg"
     }
-]
+    ]
+}    
