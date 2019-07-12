@@ -6,7 +6,7 @@ let quotes;
 
 //asynchronous function that fetches JSON content and populates the quotes array
 const makeRequest = async () => {
-    const responseJSON = await fetch('/random-quotes-vanillajs-json/data/quotes.json');
+    const responseJSON = await fetch('https://my-json-server.typicode.com/morsewall/random-quotes-vanillajs-rest-api/quotes');
     quotes = await responseJSON.json();
 }
 
