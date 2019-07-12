@@ -2,12 +2,13 @@
 // alert("Hello! I am an alert box!!");
 
 // array to be populated with JSON content
-let quotes;
+// let quotes;
 
 //asynchronous function that gets data from the API and populates the quotes array
 const makeRequest = async () => {
     const responseJSON = await fetch('https://my-json-server.typicode.com/morsewall/random-quotes-vanillajs-rest-api/quotes');
-    quotes = await responseJSON.json();
+    const quotes = await responseJSON.json();
+    quotes
 }
 
 //function to access random quote from array and inject it together with author on HTML
