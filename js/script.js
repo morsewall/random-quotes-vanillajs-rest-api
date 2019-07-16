@@ -16,6 +16,7 @@ const makeRequest = async () => {
 function injectQuote() {
   //access random quote from quote array
   let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
+  console.log(randomQuote);
   //inject random quote on HTML
   //  document.getElementById('text').innerHTML = randomQuote.quoteText;
    document.getElementById('text').innerHTML = randomQuote.quote;
