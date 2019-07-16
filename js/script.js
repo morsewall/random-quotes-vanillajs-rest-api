@@ -45,5 +45,6 @@ function injectQuote() {
 makeRequest().then(result => injectQuote());
 
 //inject a quote on screen when "Get New Quote" button is clicked
-document.getElementById('new-quote').addEventListener('click', function() {injectQuote();});
+// document.getElementById('new-quote').addEventListener('click', function() {injectQuote();});
+document.getElementById('new-quote').addEventListener('click', function() {makeRequest().then(result => injectQuote());});
 
