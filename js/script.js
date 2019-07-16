@@ -15,15 +15,16 @@ const makeRequest = async () => {
 //function to access random quote from array and inject it together with author on HTML
 function injectQuote() {
   //access random quote from quote array
-  let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
-  console.log(randomQuote);
+  // let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   //inject random quote on HTML
   //  document.getElementById('text').innerHTML = randomQuote.quoteText;
-   document.getElementById('text').innerHTML = randomQuote.quote;
+   document.getElementById('text').innerHTML = quotes.quote;
   let quoteTextElem = randomQuote.quote;
   //inject author on HTML
-  document.getElementById('author').innerHTML = "- " + randomQuote.quoteAuthor;
-  let quoteAuthorElem = " - " + randomQuote.quoteAuthor;
+  // document.getElementById('author').innerHTML = "- " + randomQuote.quoteAuthor;
+  // let quoteAuthorElem = " - " + randomQuote.quoteAuthor;
+  document.getElementById('author').innerHTML = "- " + "Kanye West";
+  let quoteAuthorElem = " - " + "Kanye West";
   //truncating quote text in case full tweet gets to be over 280 characters
   let contentQuote = quoteTextElem + quoteAuthorElem;
   if (contentQuote.length > 280) {
