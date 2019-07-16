@@ -18,8 +18,9 @@ function injectQuote() {
   // let randomQuote = quotes[Math.floor(Math.random() * quotes.length)];
   //inject random quote on HTML
   //  document.getElementById('text').innerHTML = randomQuote.quoteText;
-   document.getElementById('text').innerHTML = quotes.quote;
-  let quoteTextElem = randomQuote.quote;
+  // let quoteTextElem = randomQuote.quoteText;
+  document.getElementById('text').innerHTML = quotes.quote;
+  let quoteTextElem = quotes.quote;
   //inject author on HTML
   // document.getElementById('author').innerHTML = "- " + randomQuote.quoteAuthor;
   // let quoteAuthorElem = " - " + randomQuote.quoteAuthor;
