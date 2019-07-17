@@ -37,7 +37,7 @@ function injectQuote() {
     document.getElementById('tweet-quote').href = "https://twitter.com/intent/tweet?text=" + subString;
   } else {
     //generate url available for Twitter intent and inject url on HTML
-    document.getElementById('tweet-quote').href = "https://twitter.com/intent/tweet?text=" + contentQuote;
+    document.getElementById('tweet-quote').href = "https://twitter.com/intent/tweet?text=" + contentQuote + related;
   } 
 };
 
