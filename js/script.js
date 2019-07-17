@@ -20,13 +20,19 @@ function injectQuote() {
   //inject author on HTML
   document.getElementById('author').innerHTML = "- " + randomQuote.quoteAuthor;
   let quoteAuthorElem = " - " + randomQuote.quoteAuthor;
+  const lineBreak = "%0a";
+  const related = "&related=celue";
+  const via = "&via=morsewall";
+  const addOnHandle = " @celue";
   //truncating quote text in case full tweet gets to be over 280 characters
-  let contentQuote = quoteTextElem + quoteAuthorElem;
+  let contentQuote = quoteTextElem + quoteAuthorElem + lineBreak + via + addOnHandle;
   if (contentQuote.length > 280) {
     let charCountAuthor = quoteAuthorElem.length;
+    let viaCharCount = via.length;
+    let addOnHandleCharCount = addOnHandle.length;
     const extraStylingChar = "..." + '"';
     let extraCharCount = extraStylingChar.length;
-    let subString = quoteTextElem.substring(0, 280 - extraCharCount - charCountAuthor) + extraStylingChar + quoteAuthorElem;
+    let subString = quoteTextElem.substring(0, 280 - extraCharCount - charCountAuthor - viaCharCount - addOnHandleCharCount) + extraStylingChar + quoteAuthorElem + lineBreak + via + addOnHandle + related;
     //generate url available for Twitter intent and inject url on HTML
     document.getElementById('tweet-quote').href = "https://twitter.com/intent/tweet?text=" + subString;
   } else {
