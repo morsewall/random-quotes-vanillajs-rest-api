@@ -23,7 +23,7 @@ function injectQuote() {
   const lineBreak = "%0a";
   const related = "&related=celue";
   const via = "&via=morsewall";
-  const addOnHandle = " @celue  ";
+  const addOnHandle = " @celue%20%";
   //truncating quote text in case full tweet gets to be over 280 characters
   let contentQuote = quoteTextElem + quoteAuthorElem + lineBreak + via + addOnHandle;
   if (contentQuote.length > 280) {
