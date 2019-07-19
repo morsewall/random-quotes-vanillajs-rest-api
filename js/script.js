@@ -1,5 +1,4 @@
 "use strict";
-// alert("Hello! I am an alert box!!");
 
 // array to be populated with the API response
 let quotes;
